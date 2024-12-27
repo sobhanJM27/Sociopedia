@@ -22,9 +22,9 @@ export const authSlice = createSlice({
             state.user = null;
             state.token = null;
         },
-        setFreinds: (state, action) => {
+        setFriends: (state, action) => {
             if (state.user) {
-                state.user.freinds = action.payload.freinds;
+                state.user.freinds = action.payload.friends;
             } else {
                 console.log("user error non-existent :(");
             }
